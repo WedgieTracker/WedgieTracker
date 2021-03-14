@@ -1,7 +1,10 @@
 <?php
 
+  // Include Listener
+  include './twitter/listener.php';
+
   // Get Number of Wedgies from listener
-  $wedgies = str_replace(array("\r", "\n"), '', file_get_contents('./listener.php'));
+  $wedgies = $wedgiesfromtwitter;
 
   // Estimated number of games to be played this season - Playoffs included
   $gamesnumber = '1166';
